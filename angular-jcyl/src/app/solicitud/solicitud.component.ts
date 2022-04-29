@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./solicitud.component.css']
 })
 export class SolicitudComponent implements OnInit {
+  solicitud = {nombre:"Juan Antonio"};
 
   constructor() { }
 
