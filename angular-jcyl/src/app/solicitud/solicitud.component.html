@@ -1,2 +1,4 @@
-<p>solicitud works! Yujuuuu!!!</p>
-<p>mi nombre: {{solicitud.nombre}}</p>
+<p  [style.color]="+solicitud.nombre > 0.5 ? 'red' : 'blue'">solicitud works! Yujuuuu!!!</p>
+<p>mi nombre: {{solicitud?.nombre}}</p>
+
+<p>nombre: <input type="text" name="solicitud.nombre" id="text"></p>

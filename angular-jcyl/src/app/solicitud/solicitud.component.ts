@@ -8,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class SolicitudComponent implements OnInit {
   solicitud = {nombre:"Juan Antonio"};
 
-  constructor() { }
+  constructor() {
+    console.log("aaaa: "+this.solicitud.nombre);
+
+    setInterval(() => {
+      this.solicitud.nombre = '' + Math.random();
+      }, 2000)
+
+
+  }
 
   ngOnInit(): void {
   }
